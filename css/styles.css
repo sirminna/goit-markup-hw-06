@@ -569,26 +569,47 @@ img {
 .footer-link {
   margin-right: 93px;
 }
+
 .footer-subscribe {
-  display: inline-block;
+  display: block;
+}
+.form-subscribe {
+  position: relative;
+  display: flex;
 }
 .footer-button {
+  position: relative;
   background-color: var(--accent-color);
   color: var(--white-text);
+  width: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 10px 62px 10px 29px;
+  padding: 10px 0 10px 28px;
   border: 0;
-  margin-left: auto;
-  margin-right: auto;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-subscribe {
+  background-color: var(--footer-background);
+  width: 358px;
+  height: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  margin-right: 12px;
+  font-size: 16px;
+  line-height: 1.25px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
 }
 /*модальное окно*/
 .backdrop {
@@ -656,12 +677,24 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid #2196f3;
+  cursor: pointer;
+}
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
 
 .form-icon {
   position: absolute;
   left: 12px;
   top: 50%;
   transform: translateY(-35%);
+}
+.policy-link {
+  color: var(--accent-color);
+  text-decoration: var(--accent-color);
 }
 .coment-input {
   margin-top: 4px;
