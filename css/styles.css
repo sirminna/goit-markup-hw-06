@@ -604,6 +604,9 @@ img {
   font-size: 16px;
   line-height: 1.25px;
   letter-spacing: 0.03em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
 }
 .subscribe-icon {
@@ -710,6 +713,32 @@ img {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+.checkbox-policy {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  margin-left: 12px;
+  border: 2px solid #2a2a2a;
+  border-radius: 4px;
+
+  transition: transform 250ms linear;
 }
 .button-close {
   position: absolute;
