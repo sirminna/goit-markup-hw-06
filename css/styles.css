@@ -697,7 +697,7 @@ img {
 }
 .policy-link {
   color: var(--accent-color);
-  text-decoration: var(--accent-color);
+  text-decoration: underline;
 }
 .coment-input {
   margin-top: 4px;
@@ -738,7 +738,14 @@ img {
   border: 2px solid #2a2a2a;
   border-radius: 4px;
 
-  transition: transform 250ms linear;
+  transition: transform 200ms linear;
+}
+.checkbox:checked + .checkbox-icon {
+  border-color: transparent;
+  background-color: var(--accent-color);
+  background-image: url('../images/icon.svg');
+  background-size: contain;
+  background-origin: border-box;
 }
 .button-close {
   position: absolute;
