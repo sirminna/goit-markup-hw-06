@@ -685,9 +685,11 @@ img {
   border: 1px solid #2196f3;
   cursor: pointer;
 }
-.form-input:focus + .form-icon {
+.form-input:focus + .form-icon,
+.form-input:hover + .form-icon {
   fill: var(--accent-color);
 }
+
 
 .form-icon {
   position: absolute;
